@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140870026-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-140870026-2');
+        </script>
+
         <title>Interval Training</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <h1>Pitch Training</h1>
-        <br>
-        <button id="play">play</button>
-        <br>
-        <button id="c">c</button>
-        <button id="d">d</button>
-        <br>
-        <button id="next">next</button>
-        <br>
-        <p id="scoreKeeper">0</p>
-        <script src="script.js"></script>
+        <div id="container">
+            <h1 id="title">Pitch Training</h1>
+            <div id="top">
+                <div class="top-box" id="play"><span>play</span></div>
+                <div class="top-box"><div id="arrow">></div></div>
+                <div class="top-box" id="message"></div>
+            </div>
+            <div id="middle">
+                <div class="middle-box" id="0">identical</div>
+                <div class="middle-box" id="1">minor 2nd</div>
+                <div class="middle-box" id="2">major 2nd</div>
+                <div class="middle-box" id="3">minor 3rd</div>
+                <div class="middle-box" id="4">major 3rd</div>
+                <div class="middle-box" id="5">4th</div>
+                <div class="middle-box" id="6">tritone</div>
+                <div class="middle-box" id="7">5th</div>
+                <div class="middle-box" id="8">minor 6th</div>
+                <div class="middle-box" id="9">major 6th</div>
+                <div class="middle-box" id="10">minor 7th</div>
+                <div class="middle-box" id="11">major 7th</div>
+                <div class="middle-box" id="12">octave</div>
+            </div>
+            <div id="end">
+                <div class="end-box" id="next">next</div>
+                <div class="end-box" >
+                    <span id="scoreKeeper">0</span>
+                    <span id="outof">out of</span>
+                    <span id="total">0</span>
+                </div>
+                <span class="end-box" id="percent"> </span>
+            </div>
+            <script src="./script.js"></script>
+        </div>
     </body>
 </html>

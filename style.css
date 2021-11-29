@@ -1,3 +1,112 @@
+body {
+    font-size: 45px;
+}
+
 h1 {
-    color: purple
+    font-size: 90%;
+}
+
+#outof {
+    margin: 0 10px;
+}
+
+#play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#next {
+    cursor: pointer;
+    margin: 0 33%;
+    background-color: buttonface;
+}
+
+#arrow {
+    width: 20px;
+}
+
+#message {
+    text-align: center;
+    height: 120px;
+    padding-top: 10px;
+}
+
+#container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#top {
+    /* flex child */
+    width: 100%;
+    
+    /* flex parent */
+    display: flex;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+.top-box {
+    width: 50%;
+    flex-grow: 1;
+}
+
+#middle {
+    /* flex child */
+    width: 100%;
+    
+    /* flex parent */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 5px 0;
+}
+
+.middle-box {
+    width: 49%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#end {
+    /* flex child */
+    width: 100%;
+    
+    /* flex parent */
+    display: flex;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+.end-box {
+    /* flex child */
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 2px solid white;
+
+    /* flex parent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1245px) {
+    .middle-box {
+        width: 49%;
+    }
+    body {
+        margin: 0 50px;
+    }
+}
+@media (min-width: 1245px) {
+    #container {
+        max-width: 500px;
+    }
 }
