@@ -2,6 +2,7 @@
 layout: post
 title: "Understanding Tableau's Grand Total Calculations"
 date: 2025-01-19
+categories: tableau
 ---
 
 Today I learned that in Tableau Subtotals and Grand Totals are not calculated as a simple aggregation.
