@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Installing llama.cpp on Linux mint"
-date:   2025-02-09
+date:   2025-02-08
 categories: llm linux-mint llama.cpp
 ---
 
