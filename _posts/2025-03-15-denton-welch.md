@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Voice Through a Cloud"
-date:   2025-03-16
+date:   2025-03-15
 categories: writing denton-welch
 ---
 
