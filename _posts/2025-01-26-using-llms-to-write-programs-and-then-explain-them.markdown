@@ -12,3 +12,9 @@ Thinking I would like to learn how to create an API plugin, and in doing so crea
 After installing this tool using pip, I was able to use it to run this command:
 
     files-to-prompt files-to-prompt | llm --system 'Explain this code to me'
+
+Which uses files-to-prompt to create a list of its own innards and pass this to llm to be explained. See also:
+
+    which llm | xargs files-to-prompt | llm -s 'what does the code do please'
+
+Finding the location of the llm command, passing it to files-to-prompt, then getting llm to explain the code.
